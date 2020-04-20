@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to the most extraoardinary countryhouse in the Aniene Valley">
+  <meta name="keywords" content="countryhouse, environmental center, educational center"> 
+  <script src="https://kit.fontawesome.com/7546be7041.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet"  href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+  <title>Il Casone | Welcome</title>
+</head>
+<body>  
+     <!-- Navbar -->
+    <nav id="navbar" >
+      <div class="container">
+        <div class="logo"><a href="index.html"></a><img src="./img/logo_il_casone.png" alt="Logo Casone" height="80px"></div>
+        <ul>
+          <li><a class="current" href="#showcase">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>          
+        </ul>  
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <header id="showcase">
+      <div class="showcase-content">
+        <h1 class="l-heading">
+          <span class="text-primary">Enjoy</span> Your Stay
+        </h1>
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda dolore at nam consequatur accusantium illum?</p>
+        <a href="#history" class="btn">About Il Casone</a>  
+      </div>
+    </header>
+    
+    <!-- Section History -->
+    <section id="history" >
+      <div class="history-img"></div>
+      <div class="history-text text-center bg-dark p-2">
+        <h2 class="m-heading"><span class="text-primary">The History</span> Of Our Countryhouse</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro facilis magnam cum qui molestiae reiciendis labore a sint nobis modi. Ducimus, atque distinctio animi ipsum doloribus magni vitae reprehenderit itaque, esse, dolorem veniam ut aliquam similique nostrum. Ducimus facilis quod assumenda eum blanditiis quibusdam ut quas suscipit aut, doloremque saepe!</p>
+        <a href="about.html" class="btn btn-light">Read More</a>          
+      </div>
+    </section>
+
+    <!-- Section What We Do -->
+    <section id="infos" class="bg-light py-1">
+      <div class="container">
+        <h2 class="m-heading text-center"><span class="text-primary">What</span> We Do</h2>
+        <div class="items">
+          <div class="item">
+            <i class="fas fa-hotel fa-2x"></i>
+            <div>
+              <h3>Country House</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque!</p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-award fa-2x"></i>
+            <div>
+              <h3>Environmental And Educational Center</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque!</p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-passport fa-2x"></i>
+            <div>
+              <h3>International Point for ESC & Training</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque!</p>
+            </div>
+          </div>      
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+      <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Contact Us</h2>
+        <p>Please use the form below to contact us</p>
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone" placeholder="Enter Phone Number">
+          </div>
+          <div class="form-group">
+            <label for="message">message</label>
+            <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+          </div>
+          <input type="submit" value="Send" class="btn btn-dark">
+        </form>  
+      </div>
+      <div class="map"></div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer id="main-footer" class="bg-dark text-center">
+      <div class="container">        
+        <p>Copyright &copy; 2020, Il Casone, All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- JQuery CDN -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  
+  <!-- Local JS file -->
+  <script src="js/main.js"></script>
+
+  <!-- >Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgtKmmlOkro6dY8LAFhPx0R3K60Y5Ovl4&callback=initMap"
+    async defer></script>
+    
+  
+</body>
+</html>

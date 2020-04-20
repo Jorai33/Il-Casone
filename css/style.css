@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+    --animate-speed: 2s;
+    --primary-color: #f7c08a;
+    --max-width: 1100px;
+ }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.category {  
+  display: inline-block;
+  color: #fff;
+  font-size: .75rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.category-rooms { background: var(--primary-color);}
+.category-second { background: #333;}
+
+html, body {
+  font-family:'Roboto', sans-serif; 
+  line-height: 1.4;
+}
+
+a { text-decoration: none; }
+
+
+p { margin: 0.75rem 0; }
+
+
+
+/* Utility Classes */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+}
+
+.bg-primary {
+    background: #f7c08a;
+    color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.m-heading {
+  font-size: 1.5rem ;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+.p-1 { padding: 1.5rem ; }
+.p-2 { padding: 2rem ; }
+.p-3 { padding: 3rem ; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #333;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: #444444;
+}
+
+.text-primary {
+  color: #f7c08a;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.box {
+  padding: 3rem;
+  text-align: center;
+
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  background: #444 dotted 1px;
+}
+
+
+
+
+/* Navbar */
+#navbar {
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  z-index: 1;
+}
+
+#navbar .container {
+  display: flex;  
+  justify-content: space-between;
+  padding: 1rem;
+  
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 2.5rem 0.75rem;
+  /* margin: 0 0.25rem;   */
+}
+
+#navbar ul li a:hover, #navbar ul li a.current {
+  color: #f7c08a;
+  background: #444444;
+}
+
+/* Showcase */
+#showcase {
+  background: url('../img/landscape-photography-of-white-mountain-753325.jpg') no-repeat center center/cover;
+  color: #fff;
+   
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 2rem;  
+  
+}
+
+/* Activités */
+#activities {
+  background: #333 url('../img/woman-wearing-grey-long-sleeved-top-photography-1122868.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+   
+}
+
+#activities .activities-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;  
+}
+
+/* Animation */
+#activities h1 {
+  transform: translateY(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in ;
+}
+
+#activities p {
+  transform: translateX(-1800px);
+  animation: text var(--animate-speed) forwards ease-in 1s ;
+}
+
+/* Keyframes */
+@keyframes heading {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes text {
+  to {
+    transform: translateX(0);
+  }
+
+}
+
+/* Section Who We Are */
+#activities-listing {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#activities-listing div {
+  flex: 1;
+}
+
+#activities-listing div p {
+  margin: initial 10rem;
+}
+
+
+
+/* History */
+#history {
+  display: flex;
+}
+
+#history div {
+  flex: 1;
+}
+
+#history .history-img {
+  background: url('../img/architecture-cobblestone-country-house-daylight-575226.jpg') no-repeat center center/cover;
+  
+}
+
+#history .history-text p {
+  line-height: 2.25rem;
+}
+
+/* Infos */
+#infos .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#infos .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#infos .items .item i {
+  background: #f7c08a ;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Contact */
+#contact {
+  display: flex;
+   
+}
+
+#contact .contact-form, #contact .map {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input, 
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+/* Contact Info */
+#contact-info {
+  display: flex;
+  
+}
+
+#contact-info div {
+  flex: 1;
+}
+
+
+
+/* About Info */
+#about-info {
+  display: flex;
+}
+#about-info div {
+  flex: 1;
+}
+
+#about-info .info-left {
+  padding: 0 10rem;
+  
+} 
+
+#about-info .info-left .about-heading {
+  font-size: 2.5rem;
+}
+
+#about-info .info-right img {
+  margin-right: 4rem; 
+  width: 70%;
+  border-radius: 50%;
+}
+
+#testimonials {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Testimonials */
+#testimonials {
+  height: 100%;
+  background: url('../img/test-bg.jpg') no-repeat center center/cover;
+  padding-top: 100px;
+}
+ 
+#testimonials h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+
+#testimonials .testimonial {
+  padding: 20px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#testimonials .testimonial img {
+  width: 6rem;
+  margin-right: 20px;
+  border-radius: 50%;
+} 
+
+/* Gallery */
+#gallery {
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+
+#gallery:before {
+  content: '';
+  background: url('../img/flowers-on-book-near-window-545032.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#gallery .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#gallery .gallery-content {
+  z-index: 0;
+}
+
+#gallery .gallery-content p {
+  margin-bottom: 1rem;
+}
+
+/* Home Articles  */
+#home-articles .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#home-articles .articles-container img {
+  width: 100%;
+  height: 11rem;
+}
+
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  grid-column: 1 / span 2;
+}
+
+#home-articles .articles-container > *:last-child {
+  grid-column: 2 / span 2;
+}
+
+/* Booking */
+.section {
+	position: relative;
+	height: 100vh;
+}
+
+.section .section-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#booking {
+	font-family: 'Montserrat', sans-serif;
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+#booking::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgba(47, 103, 177, 0.6);
+}
+
+.booking-form {
+	background-color: #fff;
+	padding: 50px 20px;
+	-webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+}
+
+.booking-form .form-group {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.booking-form .form-control {
+	background-color: #ebecee;
+	border-radius: 4px;
+	border: none;
+	height: 40px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #3e485c;
+	font-size: 14px;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+	color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+	color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form .form-control::placeholder {
+	color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form input[type="date"].form-control:invalid {
+	color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+	position: absolute;
+	right: 0px;
+	bottom: 4px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: rgba(62, 72, 92, 0.3);
+	font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+	display: inline-block;
+	color: #3e485c;
+	font-weight: 700;
+	margin-bottom: 6px;
+	margin-left: 7px;
+}
+
+.booking-form .submit-btn {
+	display: inline-block;
+	color: #fff;
+	background-color: #1e62d8;
+	font-weight: 700;
+	padding: 14px 30px;
+	border-radius: 4px;
+	border: none;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.booking-form .submit-btn:hover,
+.booking-form .submit-btn:focus {
+	opacity: 0.9;
+}
+
+.booking-cta {
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+
+.booking-cta h1 {
+	font-size: 52px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+}
+
+.booking-cta p {
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Footer */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}
+
+
+
+
+
+
+
